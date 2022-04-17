@@ -7,7 +7,8 @@ object Recursion {
     if(n <= 0){
       0
     }else{
-      n + computeGeometricSum(n - 1)
+      val recursiveReturn = computeGeometricSum(n - 1)
+      n + recursiveReturn
     }
   }
 

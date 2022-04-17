@@ -25,6 +25,9 @@ object Types {
     // Converting variable types
     var anotherDouble: Double = aString.toDouble
     var anotherString: String = anInt.toString
+    var combineStrings: String = ""
+    combineStrings.concat(anotherString)
+    var newString: String = aString.concat("hello")
 
     // Truncates the decimal. anotherInt == 5
     var anotherInt: Int = aDouble.toInt

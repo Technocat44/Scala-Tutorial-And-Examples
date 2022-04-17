@@ -11,9 +11,14 @@ object Anagrams {
         val newString: String = input.substring(0, i) + input.substring(i + 1, input.length)
         anagrams(newString).map(_ + input.charAt(i))
       }).toList
-
+      println(output)
       output.flatten.distinct
     }
+
+  }
+
+  def main(args: Array[String]): Unit = {
+    anagrams("Fish")
   }
 
 

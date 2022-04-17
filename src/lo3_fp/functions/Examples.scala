@@ -20,7 +20,7 @@ object Examples {
 
 
   def mapExample(): Unit = {
-    val numbers: List[Double] = List(1.0, 2.0, 3.0, 4.0, 5.0)
+    val numbers: List[Int] = List(1, 2, 3, 4, 5)
     val numbersSquared: List[Double] = numbers.map(Math.pow(_, 2.0))
     numbersSquared.foreach(println)
   }
@@ -36,17 +36,17 @@ object Examples {
     words.reduce((a: String, b: String) => a + " AND " + b)
   }
 
-
-  def yieldExample(): Unit = {
-    val numbers: List[Double] = List(1.0, 2.0, 3.0, 4.0, 5.0)
-    val numbersSquared: List[Double] = for (number <- numbers) yield {
-      Math.pow(number, 2.0)
-    }
-    numbersSquared.foreach(println)
-  }
+//
+//  def yieldExample(): Unit = {
+//    val numbers: List[Double] = List(1.0, 2.0, 3.0, 4.0, 5.0)
+//    val numbersSquared: List[Double] = for (number <- numbers) yield {
+//      Math.pow(number, 2.0)
+//    }
+//    numbersSquared.foreach(println)
+//  }
 
   def yieldExample2(): Unit = {
-    val numbersSquared: List[Double] = (for (number <- 1 to 5) yield {
+    val numbersSquared: List[Double] = (for (number <- 1 to 3) yield {
       Math.pow(number, 2.0)
     }).toList
     numbersSquared.foreach(println)
@@ -114,18 +114,17 @@ object Examples {
 
     //    forEachExample()
     //    filterExample()
-    //    mapExample()
-    //    mapExample2()
+//        mapExample()
+     mapExample2()
     //    yieldExample()
-    //    yieldExample2()
-        reduceExample()
+     //   yieldExample2()
+   // reduceExample()
     //    reduceExample2()
-    //    foldExample()
+    //  foldExample()
     //    sumExample()
     //    distinctExample()
     //    sliceExample()
 //    reverseExample()
-    //    changeTypesExample()
-
+  //    changeTypesExample()
   }
 }

@@ -38,7 +38,10 @@ object GraphExample {
     graph.addEdge(11, 8)
 
     BFS.bfs(graph, 0)
+    println(graph)
+    println("this is the graph's nodes = " + graph.nodes) // represents each element in the graph as a map of INT's to Strings
+    println("this is the graph's edges = " + graph.adjacencyList) // represents each edge in the graph as a map of the
+    // INT (that represents the String/name of the school) to a list of INT's that the node connects too.
   }
-
 
 }

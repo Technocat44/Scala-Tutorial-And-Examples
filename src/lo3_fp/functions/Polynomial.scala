@@ -12,6 +12,15 @@ object Polynomial {
     new Polynomial(genes)
   }
 
+  def main(args: Array[String]): Unit = {
+    val newPoint: Point = new Point(2.0, 2.3)
+    val newPoint2: Point = new Point(3.0, 1.4)
+    val listoPoint: List[Point] = List(newPoint, newPoint2)
+    val costFunctionReturnVal: Polynomial => Double = costFunction(listoPoint)
+    val newPoly: Polynomial = new Polynomial(List(3.0,3.0,3.4))
+    println(costFunctionReturnVal(newPoly))
+  }
+
 }
 
 

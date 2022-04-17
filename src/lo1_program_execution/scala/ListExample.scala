@@ -16,7 +16,7 @@ object ListExample {
     println("2: " + primes)
 
     // Don't make this mistake! Must reassign to primes with "primes ="
-    primes :+ 13
+    // primes :+ 13
 
     // Primes does not contain 13
     println("3: " + primes)
